@@ -1,3 +1,11 @@
+import { Banner } from "./components/Banner";
+import { WordCounter } from "./components/WordCounter";
+
 export const App = () => {
-  return <div>App</div>;
+  return (
+    <div>
+      <Banner />
+      <WordCounter />
+    </div>
+  );
 };
