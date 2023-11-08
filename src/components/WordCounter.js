@@ -5,9 +5,10 @@ export const WordCounter = () => {
 
   const handleChange = (event) => {
     const counterValue = event.target.value;
-    const wordCounterValue = counterValue.split(" ").length;
+    const cleanCounterValue = counterValue.replace(/ +/g, " ");
+    const wordCounterValue = cleanCounterValue.split(" ").length;
 
-    setWordCounter(wordCounterValue - 1);
+    setWordCounter(wordCounterValue);
   };
 
   return (
